@@ -1,1 +1,51 @@
 @import "tailwindcss";
+
+@theme {
+  --font-display: "DM Serif Display", Georgia, serif;
+  --font-sans: "Plus Jakarta Sans", -apple-system, BlinkMacSystemFont, sans-serif;
+  --color-ivory: #faf6f2;
+  --color-blush: #f5e8e6;
+  --color-espresso: #2d2124;
+  --color-espresso-soft: #665458;
+  --color-mauve: #8e636b;
+  --color-rose: #c78b93;
+  --color-rose-deep: #7a4b54;
+  --color-footer: #24191c;
+}
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+    background-color: #faf6f2;
+    color: #2d2124;
+    overflow-x: hidden;
+  }
+
+  body {
+    margin: 0;
+    font-family: var(--font-sans);
+    background-color: #faf6f2;
+    color: #2d2124;
+    -webkit-font-smoothing: antialiased;
+    overflow-x: hidden;
+  }
+
+  :focus-visible {
+    outline: 2px solid #7a4b54;
+    outline-offset: 3px;
+  }
+
+  @media (prefers-reduced-motion: reduce) {
+    html {
+      scroll-behavior: auto;
+    }
+  }
+}
+
+.font-display {
+  font-family: var(--font-display);
+}
+
+.text-balance {
+  text-wrap: balance;
+}
