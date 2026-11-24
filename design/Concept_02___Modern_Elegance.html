@@ -1,0 +1,1237 @@
+<!DOCTYPE html><html lang="en"><head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>GLAMOUR HUB — Your Beauty. Your Signature. | Modern Beauty Studio</title>
+  <meta name="description" content="Glamour Hub — A modern feminine beauty studio offering bespoke makeup, hair rituals, and skin prep. Enquire via WhatsApp.">
+  <meta property="og:title" content="GLAMOUR HUB — Your Beauty. Your Signature.">
+  <meta property="og:description" content="Modern Elegance concept for Glamour Hub. Rated 4.9 stars on Google (verify before publication).">
+  <meta property="og:type" content="website">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&amp;family=Plus+Jakarta+Sans:wght@400;500;600&amp;display=swap" rel="stylesheet">
+  <style data-stitch-original-href="669a9e0b4b0ddcd6===style.css">/* ==========================================================================
+   CONCEPT 02 — MODERN ELEGANCE
+   Warm Ivory (#FAF6F2), Blush Pink (#F3E1DF), Muted Mauve (#8E636B)
+   ========================================================================== */
+
+:root {
+  --bg-ivory: #faf6f2;
+  --bg-blush: #f5e8e6;
+  --bg-card: #ffffff;
+  --text-main: #2d2124;
+  --text-soft: #665458;
+  --mauve: #8e636b;
+  --rose: #c78b93;
+  --rose-deep: #7a4b54;
+  --border-soft: rgba(142, 99, 107, 0.16);
+  --radius-lg: 24px;
+  --radius-md: 16px;
+  --radius-pill: 999px;
+  --font-display: 'DM Serif Display', Georgia, serif;
+  --font-sans: 'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, sans-serif;
+  --ease-soft: cubic-bezier(0.25, 0.8, 0.25, 1);
+  --container: min(1220px, 90vw);
+}
+
+*, *::before, *::after { box-sizing: border-box; }
+
+html {
+  scroll-behavior: smooth;
+  background: var(--bg-ivory);
+  color: var(--text-main);
+  overflow-x: hidden;
+}
+
+body {
+  margin: 0;
+  font-family: var(--font-sans);
+  font-size: 16px;
+  line-height: 1.65;
+  background: var(--bg-ivory);
+  color: var(--text-main);
+  -webkit-font-smoothing: antialiased;
+  overflow-x: hidden;
+}
+
+img { display: block; max-width: 100%; height: auto; }
+a { color: inherit; text-decoration: none; }
+button, input, select, textarea { font-family: inherit; }
+
+:focus-visible {
+  outline: 2px solid var(--rose-deep);
+  outline-offset: 3px;
+}
+
+.container {
+  width: var(--container);
+  margin-inline: auto;
+}
+
+.section {
+  padding-block: clamp(4rem, 7vw, 6.5rem);
+}
+
+.section--blush {
+  background: var(--bg-blush);
+}
+
+.pill-tag {
+  display: inline-block;
+  padding: 0.4rem 1rem;
+  border-radius: var(--radius-pill);
+  background: var(--bg-blush);
+  color: var(--rose-deep);
+  font-size: 0.75rem;
+  font-weight: 600;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  margin-bottom: 1.15rem;
+}
+
+.section--blush .pill-tag {
+  background: var(--bg-card);
+}
+
+.title-xl {
+  font-family: var(--font-display);
+  font-weight: 400;
+  font-size: clamp(2.65rem, 5.2vw, 4.5rem);
+  line-height: 1.08;
+  margin: 0 0 1.25rem;
+  color: var(--text-main);
+}
+
+.title-lg {
+  font-family: var(--font-display);
+  font-weight: 400;
+  font-size: clamp(2rem, 3.8vw, 3rem);
+  line-height: 1.15;
+  margin: 0 0 1rem;
+}
+
+.title-md {
+  font-family: var(--font-display);
+  font-weight: 400;
+  font-size: 1.45rem;
+  line-height: 1.25;
+  margin: 0 0 0.5rem;
+}
+
+.lead {
+  color: var(--text-soft);
+  font-size: clamp(1rem, 1.25vw, 1.12rem);
+  max-width: 54ch;
+  margin: 0;
+}
+
+/* Buttons */
+.btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  padding: 0.9rem 1.8rem;
+  border-radius: var(--radius-pill);
+  font-size: 0.88rem;
+  font-weight: 600;
+  border: 1.5px solid transparent;
+  cursor: pointer;
+  transition: transform 0.3s var(--ease-soft), background-color 0.3s, box-shadow 0.3s;
+}
+.btn--primary {
+  background: var(--rose-deep);
+  color: #ffffff;
+}
+.btn--primary:hover {
+  background: var(--mauve);
+  transform: translateY(-2px);
+  box-shadow: 0 10px 24px rgba(122, 75, 84, 0.18);
+}
+.btn--soft {
+  background: var(--bg-card);
+  color: var(--text-main);
+  border-color: var(--border-soft);
+}
+.btn--soft:hover {
+  border-color: var(--rose-deep);
+  transform: translateY(-2px);
+}
+
+/* Minimalist Navigation */
+.nav-bar {
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  background: rgba(250, 246, 242, 0.92);
+  border-bottom: 1px solid var(--border-soft);
+  padding-block: 1rem;
+}
+.nav-wrap {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1.5rem;
+}
+.brand {
+  font-family: var(--font-display);
+  font-size: 1.45rem;
+  letter-spacing: 0.04em;
+  color: var(--text-main);
+}
+.brand span {
+  color: var(--rose-deep);
+}
+.nav-menu {
+  display: none;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  gap: 2rem;
+}
+.nav-menu a {
+  font-size: 0.88rem;
+  font-weight: 500;
+  color: var(--text-soft);
+  transition: color 0.25s;
+}
+.nav-menu a:hover {
+  color: var(--rose-deep);
+}
+.nav-cta-group {
+  display: none;
+  align-items: center;
+  gap: 1rem;
+}
+.menu-btn {
+  background: var(--bg-card);
+  border: 1px solid var(--border-soft);
+  border-radius: var(--radius-pill);
+  padding: 0.5rem 0.9rem;
+  cursor: pointer;
+  color: var(--text-main);
+}
+@media (min-width: 1024px) {
+  .nav-menu { display: flex; }
+  .nav-cta-group { display: flex; }
+  .menu-btn { display: none; }
+}
+
+.mobile-sheet {
+  position: fixed;
+  inset: 0;
+  z-index: 200;
+  background: var(--bg-ivory);
+  padding: 2rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  transform: translateY(-100%);
+  transition: transform 0.4s var(--ease-soft);
+}
+.mobile-sheet.is-open { transform: translateY(0); }
+.mobile-sheet ul {
+  list-style: none;
+  padding: 0;
+  margin: 2rem 0;
+  display: grid;
+  gap: 1.25rem;
+}
+.mobile-sheet a {
+  font-family: var(--font-display);
+  font-size: 1.85rem;
+}
+
+/* Split Hero */
+.hero-split {
+  padding-block: clamp(2.5rem, 5vw, 4.5rem);
+}
+.hero-grid {
+  display: grid;
+  gap: clamp(2rem, 4vw, 4rem);
+  align-items: center;
+}
+@media (min-width: 960px) {
+  .hero-grid {
+    grid-template-columns: 1.05fr 0.95fr;
+  }
+}
+.hero-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  margin-top: 2rem;
+}
+.hero-trust {
+  margin-top: 2.25rem;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1.5rem;
+  font-size: 0.85rem;
+  color: var(--text-soft);
+}
+.hero-photo-card {
+  position: relative;
+  border-radius: var(--radius-lg);
+  overflow: hidden;
+  background: var(--bg-blush);
+  box-shadow: 0 24px 60px rgba(142, 99, 107, 0.14);
+}
+.hero-photo-card img {
+  width: 100%;
+  aspect-ratio: 3 / 4;
+  object-fit: cover;
+}
+.hero-float-badge {
+  position: absolute;
+  bottom: 1.25rem;
+  left: 1.25rem;
+  right: 1.25rem;
+  background: rgba(255, 255, 255, 0.94);
+  border-radius: var(--radius-md);
+  padding: 1rem 1.25rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 1rem;
+  font-size: 0.84rem;
+}
+
+/* Featured Strip */
+.featured-grid {
+  display: grid;
+  gap: 1.25rem;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+}
+.mini-card {
+  background: var(--bg-card);
+  border: 1px solid var(--border-soft);
+  border-radius: var(--radius-md);
+  padding: 1.5rem;
+  transition: transform 0.3s var(--ease-soft);
+}
+.mini-card:hover { transform: translateY(-3px); }
+
+/* Philosophy Split */
+.philosophy-grid {
+  display: grid;
+  gap: clamp(2rem, 5vw, 4rem);
+  align-items: center;
+}
+@media (min-width: 900px) {
+  .philosophy-grid { grid-template-columns: 0.95fr 1.05fr; }
+}
+.rounded-frame {
+  border-radius: var(--radius-lg);
+  overflow: hidden;
+}
+.rounded-frame img {
+  width: 100%;
+  aspect-ratio: 4 / 3;
+  object-fit: cover;
+}
+
+/* Interactive Service Cards */
+.cards-grid {
+  display: grid;
+  gap: 1.5rem;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+}
+.studio-card {
+  background: var(--bg-card);
+  border: 1px solid var(--border-soft);
+  border-radius: var(--radius-lg);
+  padding: 2rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 1.25rem;
+  transition: transform 0.35s var(--ease-soft), box-shadow 0.35s;
+}
+.studio-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 18px 40px rgba(142, 99, 107, 0.1);
+}
+.studio-card__tag {
+  font-size: 0.72rem;
+  font-weight: 600;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: var(--mauve);
+}
+.studio-card__btn {
+  align-self: flex-start;
+  background: var(--bg-blush);
+  color: var(--rose-deep);
+  border: none;
+  border-radius: var(--radius-pill);
+  padding: 0.6rem 1.25rem;
+  font-size: 0.8rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background-color 0.25s, color 0.25s;
+}
+.studio-card__btn:hover {
+  background: var(--rose-deep);
+  color: #ffffff;
+}
+
+/* Image-Led Portfolio */
+.portfolio-grid {
+  display: grid;
+  gap: 1.25rem;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+}
+.portfolio-tile {
+  border-radius: var(--radius-lg);
+  overflow: hidden;
+  background: var(--bg-card);
+  border: 1px solid var(--border-soft);
+  cursor: pointer;
+}
+.portfolio-tile img {
+  width: 100%;
+  aspect-ratio: 4 / 3;
+  object-fit: cover;
+  transition: transform 0.6s var(--ease-soft);
+}
+.portfolio-tile:hover img { transform: scale(1.05); }
+.portfolio-tile__cap {
+  padding: 1rem 1.25rem;
+  font-size: 0.88rem;
+  color: var(--text-soft);
+  display: flex;
+  justify-content: space-between;
+}
+
+/* Why Choose & Testimonials */
+.pillars-grid {
+  display: grid;
+  gap: 1.5rem;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+}
+.pillar {
+  background: var(--bg-card);
+  border-radius: var(--radius-md);
+  padding: 1.75rem;
+  border: 1px solid var(--border-soft);
+}
+
+/* FAQ */
+.faq-wrap {
+  max-width: 780px;
+  margin-inline: auto;
+  display: grid;
+  gap: 0.85rem;
+}
+.faq-box {
+  background: var(--bg-card);
+  border: 1px solid var(--border-soft);
+  border-radius: var(--radius-md);
+  padding: 0.25rem 1.5rem;
+}
+.faq-btn {
+  width: 100%;
+  background: none;
+  border: none;
+  padding: 1.1rem 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  text-align: left;
+  font-weight: 600;
+  color: var(--text-main);
+  cursor: pointer;
+}
+.faq-body {
+  padding-bottom: 1.15rem;
+  color: var(--text-soft);
+  font-size: 0.94rem;
+}
+.faq-body[hidden] { display: none; }
+
+/* Enquiry Form */
+.enquiry-layout {
+  display: grid;
+  gap: 2.5rem;
+}
+@media (min-width: 960px) {
+  .enquiry-layout { grid-template-columns: 1fr 1.15fr; align-items: start; }
+}
+.enquiry-card {
+  background: var(--bg-card);
+  border-radius: var(--radius-lg);
+  padding: clamp(1.5rem, 4vw, 2.5rem);
+  border: 1px solid var(--border-soft);
+  box-shadow: 0 20px 50px rgba(142, 99, 107, 0.08);
+}
+.input-row {
+  display: grid;
+  gap: 1rem;
+  margin-bottom: 1rem;
+}
+@media (min-width: 640px) {
+  .input-row--2 { grid-template-columns: 1fr 1fr; }
+}
+.input-group label {
+  display: block;
+  font-size: 0.8rem;
+  font-weight: 600;
+  color: var(--text-main);
+  margin-bottom: 0.4rem;
+}
+.input-group input,
+.input-group select,
+.input-group textarea {
+  width: 100%;
+  padding: 0.85rem 1rem;
+  border-radius: 12px;
+  border: 1px solid var(--border-soft);
+  background: var(--bg-ivory);
+  color: var(--text-main);
+  font-size: 0.95rem;
+}
+.note-banner {
+  margin-top: 1rem;
+  padding: 0.85rem 1rem;
+  border-radius: 12px;
+  background: var(--bg-blush);
+  font-size: 0.82rem;
+  color: var(--text-soft);
+}
+
+/* Lightbox */
+.lightbox {
+  position: fixed;
+  inset: 0;
+  z-index: 500;
+  background: rgba(45, 33, 36, 0.92);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 2rem;
+}
+.lightbox[hidden] { display: none; }
+.lightbox img { max-height: 76vh; border-radius: var(--radius-md); }
+.lightbox p { color: #ffffff; margin-top: 1rem; text-align: center; }
+.lightbox__close {
+  position: absolute;
+  top: 1.5rem;
+  right: 1.5rem;
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  background: #ffffff;
+  border: none;
+  font-size: 1.25rem;
+  cursor: pointer;
+}
+
+/* Footer & Sticky Mobile */
+.footer {
+  background: #24191c;
+  color: #f5eceb;
+  padding-block: 4rem 6rem;
+}
+@media (min-width: 1024px) { .footer { padding-bottom: 3.5rem; } }
+.footer-cols {
+  display: grid;
+  gap: 2rem;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+}
+.footer-base {
+  margin-top: 2.5rem;
+  padding-top: 1.5rem;
+  border-top: 1px solid rgba(255, 255, 255, 0.12);
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 1rem;
+  font-size: 0.82rem;
+  color: #c5b4b7;
+}
+
+.mobile-bar {
+  position: fixed;
+  bottom: 0;
+  inset-inline: 0;
+  z-index: 90;
+  background: #ffffff;
+  border-top: 1px solid var(--border-soft);
+  padding: 0.75rem 1rem;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 0.75rem;
+}
+@media (min-width: 1024px) { .mobile-bar { display: none; } }
+
+.top-btn {
+  position: fixed;
+  bottom: 5rem;
+  right: 1.5rem;
+  z-index: 80;
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  background: var(--bg-card);
+  border: 1px solid var(--border-soft);
+  color: var(--rose-deep);
+  cursor: pointer;
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.3s;
+}
+.top-btn.is-visible { opacity: 1; pointer-events: auto; }
+@media (min-width: 1024px) { .top-btn { bottom: 2rem; } }
+
+.reveal {
+  opacity: 0;
+  transform: translateY(20px);
+  transition: opacity 0.7s var(--ease-soft), transform 0.7s var(--ease-soft);
+}
+.reveal.is-visible { opacity: 1; transform: translateY(0); }
+
+@media (prefers-reduced-motion: reduce) {
+  html { scroll-behavior: auto; }
+  .reveal, .btn, .studio-card, .portfolio-tile img { transition: none !important; }
+  .reveal { opacity: 1; transform: none; }
+}
+</style>
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "BeautySalon",
+    "name": "Glamour Hub",
+    "telephone": "+91 82993 43261",
+    "aggregateRating": {
+      "@type": "AggregateRating",
+      "ratingValue": "4.9",
+      "bestRating": "5"
+    }
+  }
+  </script>
+</head>
+<body>
+  <!-- 1. Modern Minimalist Navigation -->
+  <header class="nav-bar">
+    <div class="container nav-wrap">
+      <a href="#top" class="brand">Glamour<span>Hub</span></a>
+      <ul class="nav-menu">
+        <li><a href="#featured">Highlights</a></li>
+        <li><a href="#philosophy">Philosophy</a></li>
+        <li><a href="#services">Services</a></li>
+        <li><a href="#portfolio">Portfolio</a></li>
+        <li><a href="#enquiry">Enquiry</a></li>
+      </ul>
+      <div class="nav-cta-group">
+        <a href="tel:+918299343261" style="font-size:0.85rem;color:var(--rose-deep);font-weight:600;" data-config="phone">+91 82993 43261</a>
+        <a href="#enquiry" class="btn btn--primary">Book Your Appointment</a>
+      </div>
+      <button class="menu-btn" id="openMenu" aria-label="Open navigation">Menu</button>
+    </div>
+  </header>
+
+  <nav class="mobile-sheet" id="mobileSheet" aria-hidden="true">
+    <div style="display:flex;justify-content:space-between;align-items:center;">
+      <span class="brand">Glamour<span>Hub</span></span>
+      <button class="menu-btn" id="closeMenu" aria-label="Close navigation">×</button>
+    </div>
+    <ul>
+      <li><a href="#featured">Highlights</a></li>
+      <li><a href="#philosophy">Philosophy</a></li>
+      <li><a href="#services">Services</a></li>
+      <li><a href="#portfolio">Portfolio</a></li>
+      <li><a href="#enquiry">Book Your Appointment</a></li>
+    </ul>
+    <a href="tel:+918299343261" class="btn btn--primary" data-config="phone">+91 82993 43261</a>
+  </nav>
+
+  <main id="top">
+    <!-- 2. Stunning Split-Layout Hero -->
+    <section class="hero-split">
+      <div class="container hero-grid">
+        <div>
+          <span class="pill-tag">Glamour Hub • Concept 02</span>
+          <!-- 3. Headline -->
+          <h1 class="title-xl">Your Beauty.<br>Your Signature.</h1>
+          <p class="lead">
+            Soft-focus radiance, thoughtful skin preparation, and effortless hair styling inside a calm, contemporary beauty studio.
+          </p>
+          <div class="hero-actions">
+            <a href="#enquiry" class="btn btn--primary">Book Your Appointment</a>
+            <a href="#services" class="btn btn--soft">Explore Our Services</a>
+          </div>
+          <div class="hero-trust">
+            <span>★ <strong>4.9</strong> Google Rating <small>(verify before launch)</small></span>
+            <span>• Direct WhatsApp Concierge</span>
+          </div>
+        </div>
+
+        <div class="hero-photo-card">
+          <img src="https://lh3.googleusercontent.com/aida/ALJJyrAgBt9h4kb6KwQV0W8zr_qSXcgC4-6Nr_jmUfD3kKP1Mduf2GcUr1rAegIgcVxn8H29g-Q4vuNgIK0FuIZ3yAz1mwKS3OdqJkP9KrJCXxx-6yUHC6V9rF4eSJQaiclbvBJqrZKt3spZgpfr_btIBlT-QxzMCsVlz7JaNIh9UMP3QnFyCklIfGWY8BCOjqOASmGfq8Y0iNTU3bgTSl5xFwCaKUrU3Mk9hOla1kSX4wzezg" alt="Radiant modern beauty portrait in soft natural morning light" data-stitch-original-src="68f1e4153bcede83===assets/c2_hero.jpg">
+          <div class="hero-float-badge">
+            <div>
+              <strong style="display:block;color:var(--text-main);">Effortless Studio Glow</strong>
+              <span style="color:var(--text-soft);font-size:0.78rem;">Sample editorial visual</span>
+            </div>
+            <a href="#enquiry" class="studio-card__btn">Enquire →</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 4. Featured Services -->
+    <section class="section section--blush" id="featured">
+      <div class="container">
+        <div class="featured-grid reveal">
+          <div class="mini-card">
+            <span class="studio-card__tag">01 • Bridal</span>
+            <h2 class="title-md" style="margin-top:0.4rem;">Soft-Glam Bridal</h2>
+            <p style="margin:0;color:var(--text-soft);font-size:0.9rem;">Luminous skin finishes designed to stay fresh from ceremony to celebration.</p>
+          </div>
+          <div class="mini-card">
+            <span class="studio-card__tag">02 • Hair</span>
+            <h2 class="title-md" style="margin-top:0.4rem;">Silk &amp; Wave Rituals</h2>
+            <p style="margin:0;color:var(--text-soft);font-size:0.9rem;">Healthy shine blowouts and sculpted movement without heavy stiffness.</p>
+          </div>
+          <div class="mini-card">
+            <span class="studio-card__tag">03 • Skin</span>
+            <h2 class="title-md" style="margin-top:0.4rem;">Dewy Skin Prep</h2>
+            <p style="margin:0;color:var(--text-soft);font-size:0.9rem;">Calming hydration rituals before any occasion or bridal appointment.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 5. About Our Beauty Philosophy -->
+    <section class="section" id="philosophy">
+      <div class="container philosophy-grid">
+        <div class="rounded-frame reveal">
+          <img src="https://lh3.googleusercontent.com/aida/ALJJyrACtj1IOiq3GBf79eFRHW-yD22cDd5jf54cZAtK-2PNuFeKRJgxxc9pVb_k7Pffe_KkMfBOmoT29yodMb4LcjHlb06pHj3XnytrRoHIFVkFJSwguzbz9u1RJo4NbNuvTctRaPvpex0BEd_-5QBEPtDnySB-UM34nv00g4kbi10YWoCxpxiOVHWwvIJLOiAyMHL1TGBmpQeYOhCsxJBcB7bM4woFE6vV46wnmHjdwIb1C4y933w" alt="Minimalist skincare serums and rose quartz on travertine" loading="lazy" data-stitch-original-src="9d548a7fb20af108===assets/c2_skincare.jpg">
+        </div>
+        <div class="reveal">
+          <span class="pill-tag">Our Philosophy</span>
+          <h2 class="title-lg">Modern Beauty That Feels Like You.</h2>
+          <p class="lead" style="margin-bottom:1.25rem;">
+            At Glamour Hub, beauty is never about overdone layers. We believe in enhancing natural features with breathable textures, clean hygiene, and unhurried one-on-one consultations.
+          </p>
+          <p style="color:var(--text-soft);margin-bottom:1.75rem;">
+            Every appointment is tailored around your skin tone, outfit palette, and personal comfort—so you walk out feeling poised and unmistakably yourself.
+          </p>
+          <a href="#enquiry" class="btn btn--soft">Start a WhatsApp Conversation</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- 6. Interactive Service Cards -->
+    <section class="section section--blush" id="services">
+      <div class="container">
+        <div style="max-width:600px;margin-bottom:2.75rem;" class="reveal">
+          <span class="pill-tag">Studio Menu</span>
+          <h2 class="title-lg">Curated Beauty Services</h2>
+          <p class="lead">Select any service card below to pre-fill your WhatsApp appointment enquiry.</p>
+        </div>
+
+        <div class="cards-grid">
+          <article class="studio-card reveal">
+            <div>
+              <span class="studio-card__tag">Makeup</span>
+              <h3 class="title-md" style="margin-top:0.5rem;">Bridal &amp; Reception Artistry</h3>
+              <p style="color:var(--text-soft);font-size:0.92rem;">Personalized bridal consultations, soft-focus base work, and long-wear finishes.</p>
+            </div>
+            <button class="studio-card__btn" data-choose-service="Bridal &amp; Reception Artistry">Select &amp; Enquire</button>
+          </article>
+
+          <article class="studio-card reveal">
+            <div>
+              <span class="studio-card__tag">Makeup</span>
+              <h3 class="title-md" style="margin-top:0.5rem;">Evening &amp; Occasion Makeup</h3>
+              <p style="color:var(--text-soft);font-size:0.92rem;">Modern rosy neutrals or classic winged definition for events and portraits.</p>
+            </div>
+            <button class="studio-card__btn" data-choose-service="Evening &amp; Occasion Makeup">Select &amp; Enquire</button>
+          </article>
+
+          <article class="studio-card reveal">
+            <div>
+              <span class="studio-card__tag">Hair</span>
+              <h3 class="title-md" style="margin-top:0.5rem;">Signature Hair Styling &amp; Rituals</h3>
+              <p style="color:var(--text-soft);font-size:0.92rem;">Effortless waves, sleek buns, and nourishing gloss treatments.</p>
+            </div>
+            <button class="studio-card__btn" data-choose-service="Signature Hair Styling &amp; Rituals">Select &amp; Enquire</button>
+          </article>
+
+          <article class="studio-card reveal">
+            <div>
+              <span class="studio-card__tag">Skin</span>
+              <h3 class="title-md" style="margin-top:0.5rem;">Skin Prep &amp; Radiance Facials</h3>
+              <p style="color:var(--text-soft);font-size:0.92rem;">Barrier-friendly hydration and gentle glow conditioning.</p>
+            </div>
+            <button class="studio-card__btn" data-choose-service="Skin Prep &amp; Radiance Facials">Select &amp; Enquire</button>
+          </article>
+
+          <article class="studio-card reveal">
+            <div>
+              <span class="studio-card__tag">Nails</span>
+              <h3 class="title-md" style="margin-top:0.5rem;">Luxury Nail &amp; Hand Care</h3>
+              <p style="color:var(--text-soft);font-size:0.92rem;">Sheer blush neutrals, clean manicures, and lasting gel shine.</p>
+            </div>
+            <button class="studio-card__btn" data-choose-service="Luxury Nail &amp; Hand Care">Select &amp; Enquire</button>
+          </article>
+
+          <article class="studio-card reveal">
+            <div>
+              <span class="studio-card__tag">Brows &amp; Lashes</span>
+              <h3 class="title-md" style="margin-top:0.5rem;">Brow Architecture &amp; Lash Lift</h3>
+              <p style="color:var(--text-soft);font-size:0.92rem;">Softly feathered brows and natural lash curl enhancement.</p>
+            </div>
+            <button class="studio-card__btn" data-choose-service="Brow Architecture &amp; Lash Lift">Select &amp; Enquire</button>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- 7. Image-Led Portfolio -->
+    <section class="section" id="portfolio">
+      <div class="container">
+        <div style="display:flex;flex-wrap:wrap;justify-content:space-between;align-items:flex-end;gap:1rem;margin-bottom:2.5rem;" class="reveal">
+          <div>
+            <span class="pill-tag">Visual Portfolio</span>
+            <h2 class="title-lg">Soft Light &amp; Clean Craft</h2>
+          </div>
+          <p style="font-size:0.84rem;color:var(--text-soft);">Sample inspiration photography only — tap to enlarge.</p>
+        </div>
+
+        <div class="portfolio-grid">
+          <div class="portfolio-tile reveal" data-src="assets/c2_hero.jpg" data-caption="Sample Dewy Rose Makeup — Concept visual only">
+            <img src="https://lh3.googleusercontent.com/aida/ALJJyrAgBt9h4kb6KwQV0W8zr_qSXcgC4-6Nr_jmUfD3kKP1Mduf2GcUr1rAegIgcVxn8H29g-Q4vuNgIK0FuIZ3yAz1mwKS3OdqJkP9KrJCXxx-6yUHC6V9rF4eSJQaiclbvBJqrZKt3spZgpfr_btIBlT-QxzMCsVlz7JaNIh9UMP3QnFyCklIfGWY8BCOjqOASmGfq8Y0iNTU3bgTSl5xFwCaKUrU3Mk9hOla1kSX4wzezg" alt="Sample dewy rose makeup portrait" loading="lazy" data-stitch-original-src="68f1e4153bcede83===assets/c2_hero.jpg">
+            <div class="portfolio-tile__cap"><span>Dewy Rose Look</span><span>+</span></div>
+          </div>
+          <div class="portfolio-tile reveal" data-src="assets/c2_hair_ritual.jpg" data-caption="Sample Glossy Waves — Concept visual only">
+            <img src="https://lh3.googleusercontent.com/aida/ALJJyrBbgayuYN4FGTWY8oWrGX9U8Ge3_N2TP_Qomg_n4CLRpBrPVxcgU4lgAC_De1g4PK5yZIz4LdXi8VGYnfxKc2oii4BW2vjQKvOeO9brkSo24I7A7nzWS7Mit8Cqplv1AQjVYTusyEITWLUkQDYFGmbDSiScl1aDTr_rOIJ_S2qoyTsEitOk98k8cuiG4W1oaZjDc5_4vG1N2x90JRX5fGQaQFGqi0wWA93GCk2xEke13Te5kWWyVSC8" alt="Sample glossy hair styling in sunlit studio" loading="lazy" data-stitch-original-src="3c3e9a57ac400af2===assets/c2_hair_ritual.jpg">
+            <div class="portfolio-tile__cap"><span>Hair Rituals</span><span>+</span></div>
+          </div>
+          <div class="portfolio-tile reveal" data-src="assets/c2_makeup_bar.jpg" data-caption="Sample Studio Vanity — Concept visual only">
+            <img src="https://lh3.googleusercontent.com/aida/ALJJyrA0wpFddYakdNR22SC_d6HssnmZcxJt4l5PG0du6hvtCN3piRhssG7QyMScAl99fvLZBGuXimGladmrP6F5TwTzlIlZqOTgKddj07HPFkCsjCAwBf0sQO4GMRJAVdITw5o1OMu2eN1PiAYYG5P0l9WD5MY4O_x5-phimDLEjtA40NiWBFNG7sAt-eSTFo4pEuZwXwJmEEv2OjULJQRQQK8ftpOZ458eTLG22UrGQwwNJ_TVfLesKA" alt="Sample blush pink beauty studio interior" loading="lazy" data-stitch-original-src="b9baf200bcbbd21e===assets/c2_makeup_bar.jpg">
+            <div class="portfolio-tile__cap"><span>Studio Ambience</span><span>+</span></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 8. Why Choose Glamour Hub + Verified-Review Placeholders -->
+    <section class="section section--blush">
+      <div class="container">
+        <div style="max-width:600px;margin-bottom:2.5rem;" class="reveal">
+          <span class="pill-tag">Why Glamour Hub</span>
+          <h2 class="title-lg">Thoughtful Details, Every Visit.</h2>
+        </div>
+
+        <div class="pillars-grid reveal">
+          <div class="pillar">
+            <h3 class="title-md">4.9★ Rated Experience</h3>
+            <p style="margin:0;color:var(--text-soft);font-size:0.9rem;">Recognized on Google Maps (verify rating &amp; reviews prior to launch).</p>
+          </div>
+          <div class="pillar">
+            <h3 class="title-md">Skin-First Preparation</h3>
+            <p style="margin:0;color:var(--text-soft);font-size:0.9rem;">Every look starts with gentle hydration for comfortable, creaseless wear.</p>
+          </div>
+          <div class="pillar">
+            <h3 class="title-md">Direct Studio Access</h3>
+            <p style="margin:0;color:var(--text-soft);font-size:0.9rem;">Speak directly with the studio team on WhatsApp to plan your appointment.</p>
+          </div>
+        </div>
+
+        <div class="pillars-grid reveal" style="margin-top:1.5rem;">
+          <div class="pillar">
+            <div style="color:var(--rose-deep);margin-bottom:0.5rem;">★★★★★</div>
+            <p style="margin:0 0 0.75rem;font-size:0.92rem;">“Verified-review placeholder: replace with real Google review praising soft-glam artistry.”</p>
+            <small style="color:var(--mauve);">Client Review Placeholder</small>
+          </div>
+          <div class="pillar">
+            <div style="color:var(--rose-deep);margin-bottom:0.5rem;">★★★★★</div>
+            <p style="margin:0 0 0.75rem;font-size:0.92rem;">“Verified-review placeholder: replace with real Google review noting studio hygiene and warmth.”</p>
+            <small style="color:var(--mauve);">Client Review Placeholder</small>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- FAQ -->
+    <section class="section">
+      <div class="container">
+        <div style="text-align:center;margin-bottom:2.5rem;" class="reveal">
+          <span class="pill-tag">Questions</span>
+          <h2 class="title-lg">Good to Know</h2>
+        </div>
+        <div class="faq-wrap reveal">
+          <div class="faq-box">
+            <button class="faq-btn" aria-expanded="false" aria-controls="c2faq1">
+              <span>Does submitting the form confirm my booking immediately?</span>
+              <span>+</span>
+            </button>
+            <div class="faq-body" id="c2faq1" hidden>
+              No — it opens a pre-filled WhatsApp enquiry to Glamour Hub (+91 82993 43261) so our team can confirm your preferred date and time personally.
+            </div>
+          </div>
+          <div class="faq-box">
+            <button class="faq-btn" aria-expanded="false" aria-controls="c2faq2">
+              <span>How can I check studio location and hours?</span>
+              <span>+</span>
+            </button>
+            <div class="faq-body" id="c2faq2" hidden>
+              Exact address and hours are confirmed directly via WhatsApp or phone while our Google Maps listing details are finalized.
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 9 & 10. Appointment Enquiry & Contact -->
+    <section class="section section--blush" id="enquiry">
+      <div class="container enquiry-layout">
+        <div class="reveal">
+          <span class="pill-tag">Reserve Your Time</span>
+          <h2 class="title-lg">Book Your Appointment</h2>
+          <p class="lead" style="margin-bottom:1.75rem;">
+            Tell us what you are celebrating and when you would like to visit. Your request opens directly in WhatsApp.
+          </p>
+          <div style="background:var(--bg-card);border-radius:var(--radius-md);padding:1.5rem;border:1px solid var(--border-soft);display:grid;gap:1rem;">
+            <div>
+              <small style="color:var(--mauve);font-weight:600;text-transform:uppercase;">Phone &amp; WhatsApp</small>
+              <div><a href="tel:+918299343261" style="font-size:1.35rem;font-family:var(--font-display);" data-config="phone">+91 82993 43261</a></div>
+            </div>
+            <div>
+              <small style="color:var(--mauve);font-weight:600;text-transform:uppercase;">Studio Address</small>
+              <div style="font-size:0.92rem;color:var(--text-soft);" data-config="address">Studio Address — To Be Confirmed with Glamour Hub</div>
+            </div>
+            <div style="padding:1rem;border-radius:12px;border:1px dashed var(--border-soft);font-size:0.82rem;color:var(--text-soft);">
+              Google Maps Integration Placeholder — embed verified Maps iframe before launch.
+            </div>
+          </div>
+        </div>
+
+        <form class="enquiry-card reveal" id="c2Form">
+          <div class="input-row input-row--2">
+            <div class="input-group">
+              <label for="c2Name">Your Name</label>
+              <input type="text" id="c2Name" required placeholder="e.g., Meera Kapoor">
+            </div>
+            <div class="input-group">
+              <label for="c2Service">Selected Service</label>
+              <select id="c2Service" required></select>
+            </div>
+          </div>
+          <div class="input-row input-row--2">
+            <div class="input-group">
+              <label for="c2Date">Preferred Date</label>
+              <input type="date" id="c2Date" required>
+            </div>
+            <div class="input-group">
+              <label for="c2Time">Preferred Time</label>
+              <select id="c2Time" required></select>
+            </div>
+          </div>
+          <div class="input-group" style="margin-bottom:1.25rem;">
+            <label for="c2Message">Additional Message</label>
+            <textarea id="c2Message" rows="3" placeholder="Tell us about your occasion or preferred look..."></textarea>
+          </div>
+          <button type="submit" class="btn btn--primary" style="width:100%;">Request Appointment via WhatsApp</button>
+          <div class="note-banner">
+            Appointments are confirmed by Glamour Hub directly on WhatsApp (+91 82993 43261) after availability is checked.
+          </div>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <!-- 11. Elegant Footer -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-cols">
+        <div>
+          <div class="brand" style="color:#ffffff;margin-bottom:0.6rem;">Glamour<span style="color:var(--rose);">Hub</span></div>
+          <p style="font-size:0.88rem;color:#d6c5c8;max-width:34ch;">Concept 02 — Modern Elegance. Crafted for a contemporary beauty studio.</p>
+        </div>
+        <div>
+          <strong style="font-size:0.82rem;text-transform:uppercase;letter-spacing:0.1em;">Studio</strong>
+          <p style="margin:0.5rem 0 0.25rem;"><a href="tel:+918299343261" data-config="phone">+91 82993 43261</a></p>
+          <p style="margin:0;font-size:0.85rem;color:#c5b4b7;" data-config="address">Address — To Be Confirmed</p>
+        </div>
+        <div>
+          <strong style="font-size:0.82rem;text-transform:uppercase;letter-spacing:0.1em;">Explore</strong>
+          <p style="margin:0.5rem 0 0.25rem;"><a href="#services">Services</a></p>
+          <p style="margin:0;"><a href="#enquiry">Book Your Appointment</a></p>
+        </div>
+      </div>
+      <div class="footer-base">
+        <span>© Glamour Hub. Concept Presentation.</span>
+        <a href="../index.html" style="color:var(--rose);">← Back to All 3 Concepts</a>
+      </div>
+    </div>
+  </footer>
+
+  <div class="mobile-bar">
+    <a href="tel:+918299343261" class="btn btn--soft" style="padding:0.75rem;font-size:0.8rem;">Call Now</a>
+    <a href="#enquiry" class="btn btn--primary" style="padding:0.75rem;font-size:0.8rem;">Book Now</a>
+  </div>
+
+  <button class="top-btn" id="c2TopBtn" aria-label="Back to top">↑</button>
+
+  <div class="lightbox" id="c2Lightbox" hidden role="dialog" aria-modal="true">
+    <button class="lightbox__close" id="c2LightboxClose" aria-label="Close">×</button>
+    <img id="c2LightboxImg" src alt>
+    <p id="c2LightboxCap"></p>
+  </div>
+
+  <script data-stitch-original-src="9e24c86006ad1e2f===../shared/business-config.js">/**
+ * GLAMOUR HUB — Editable Business Configuration
+ * ---------------------------------------------------------------------------
+ * Confirmed details from client brief & Google Maps reference are marked
+ * [CONFIRMED / VERIFY BEFORE PUBLICATION].
+ * Unconfirmed details are marked [PLACEHOLDER — EDIT BEFORE LAUNCH].
+ * Never invent addresses, owner names, years in business, prices, or hours.
+ */
+(function (global) {
+  'use strict';
+
+  const GLAMOUR_HUB_CONFIG = {
+    // [CONFIRMED] Business Identity
+    businessName: 'GLAMOUR HUB',
+    businessTagline: 'Salon, Makeup & Beauty Studio', // Working design assumption
+    phoneDisplay: '+91 82993 43261',
+    phoneHref: 'tel:+918299343261',
+    whatsappNumber: '918299343261', // Digits only with country code for wa.me
+
+    // [VERIFY BEFORE PUBLICATION] From supplied Google Maps screenshot
+    googleRating: '4.9',
+    googleRatingNote: '4.9-star Google rating (from supplied screenshot — verify before publication)',
+
+    // [PLACEHOLDER — EDIT BEFORE LAUNCH] Unconfirmed business details
+    addressLine: 'Studio Address — To Be Confirmed with Glamour Hub',
+    cityRegion: 'Location details available upon WhatsApp enquiry',
+    openingHours: 'Studio Hours — To Be Confirmed',
+    email: 'concierge@glamourhub.example', // Replace with official studio email
+    instagramUrl: '#', // Replace with official Instagram profile URL
+    googleMapsEmbedNote: 'Google Maps pin & directions placeholder — embed verified Maps URL before launch.',
+
+    // Editorial / Sample Content Disclaimer
+    sampleMediaNotice:
+      'Editorial & demonstration photography shown for visual concept presentation only. Replace with Glamour Hub portfolio imagery prior to launch.',
+    bookingDisclaimer:
+      'Submitting this form opens a pre-filled WhatsApp enquiry with our studio. Appointments are confirmed directly by Glamour Hub via WhatsApp or phone.',
+
+    // Service Categories (working design assumption — no invented prices)
+    services: [
+      {
+        id: 'bridal-glam',
+        name: 'Bridal & Reception Artistry',
+        category: 'Makeup',
+        summary: 'Bespoke bridal looks, trial consultations, and long-wear editorial finishes tailored to lighting and attire.'
+      },
+      {
+        id: 'editorial-party',
+        name: 'Evening & Occasion Makeup',
+        category: 'Makeup',
+        summary: 'Luminous skin prep, soft-focus contouring, and custom eye artistry for red-carpet events and celebrations.'
+      },
+      {
+        id: 'hair-styling',
+        name: 'Signature Hair Styling & Rituals',
+        category: 'Hair',
+        summary: 'Sculpted waves, sleek blowouts, textured updos, and restorative shine rituals.'
+      },
+      {
+        id: 'skin-radiance',
+        name: 'Skin Prep & Radiance Facials',
+        category: 'Skin',
+        summary: 'Hydrating pre-event skin conditioning designed for a smooth, camera-ready canvas.'
+      },
+      {
+        id: 'nail-studio',
+        name: 'Luxury Nail & Hand Care',
+        category: 'Nails',
+        summary: 'Clean cuticle care, gel artistry, and minimalist high-gloss finishes.'
+      },
+      {
+        id: 'brow-lash',
+        name: 'Brow Architecture & Lash Lift',
+        category: 'Brows & Lashes',
+        summary: 'Precision brow shaping and natural lash enhancement to frame the eyes.'
+      }
+    ],
+
+    // Time slot preferences (generic studio windows, not claimed opening hours)
+    preferredTimeWindows: [
+      'Morning Preference (10:00 AM – 12:30 PM)',
+      'Afternoon Preference (1:00 PM – 4:00 PM)',
+      'Evening Preference (4:30 PM – 7:30 PM)',
+      'Flexible — Please Suggest Availability'
+    ]
+  };
+
+  /**
+   * Generates a properly encoded WhatsApp enquiry URL.
+   * @param {Object} details
+   * @returns {string}
+   */
+  function buildWhatsAppEnquiryUrl(details) {
+    const name = (details && details.name ? details.name : '').trim() || 'Guest';
+    const service = (details && details.service ? details.service : '').trim() || 'General Beauty Consultation';
+    const date = (details && details.date ? details.date : '').trim() || 'Flexible';
+    const time = (details && details.time ? details.time : '').trim() || 'Flexible';
+    const message = (details && details.message ? details.message : '').trim() || 'Please share available slots.';
+
+    const lines = [
+      `Hello ${GLAMOUR_HUB_CONFIG.businessName} Team,`,
+      '',
+      'I would like to request an appointment enquiry:',
+      `• Name: ${name}`,
+      `• Selected Service: ${service}`,
+      `• Preferred Date: ${date}`,
+      `• Preferred Time: ${time}`,
+      `• Additional Message: ${message}`,
+      '',
+      'Kindly confirm availability. Thank you!'
+    ];
+
+    const encoded = encodeURIComponent(lines.join('\n'));
+    return `https://wa.me/${GLAMOUR_HUB_CONFIG.whatsappNumber}?text=${encoded}`;
+  }
+
+  global.GlamourHubConfig = GLAMOUR_HUB_CONFIG;
+  global.buildGlamourHubWhatsAppUrl = buildWhatsAppEnquiryUrl;
+})(window);
+</script>
+  <script data-stitch-original-src="2608e13bead00118===script.js">(function () {
+  'use strict';
+
+  const cfg = window.GlamourHubConfig || {};
+
+  // Mobile Menu Sheet
+  const openMenu = document.getElementById('openMenu');
+  const closeMenu = document.getElementById('closeMenu');
+  const mobileSheet = document.getElementById('mobileSheet');
+  function toggleSheet(show) {
+    if (!mobileSheet) return;
+    mobileSheet.classList.toggle('is-open', show);
+    mobileSheet.setAttribute('aria-hidden', String(!show));
+  }
+  if (openMenu) openMenu.addEventListener('click', () => toggleSheet(true));
+  if (closeMenu) closeMenu.addEventListener('click', () => toggleSheet(false));
+  if (mobileSheet) {
+    mobileSheet.querySelectorAll('a').forEach((a) => a.addEventListener('click', () => toggleSheet(false)));
+  }
+
+  // Config Injection
+  document.querySelectorAll('[data-config="phone"]').forEach((el) => {
+    el.textContent = cfg.phoneDisplay || '+91 82993 43261';
+    if (el.tagName === 'A') el.href = cfg.phoneHref || 'tel:+918299343261';
+  });
+  document.querySelectorAll('[data-config="address"]').forEach((el) => {
+    el.textContent = cfg.addressLine || 'Studio Address — To Be Confirmed';
+  });
+
+  const svcSelect = document.getElementById('c2Service');
+  const timeSelect = document.getElementById('c2Time');
+  if (svcSelect && Array.isArray(cfg.services)) {
+    cfg.services.forEach((s) => {
+      const opt = document.createElement('option');
+      opt.value = s.name;
+      opt.textContent = s.name;
+      svcSelect.appendChild(opt);
+    });
+  }
+  if (timeSelect && Array.isArray(cfg.preferredTimeWindows)) {
+    cfg.preferredTimeWindows.forEach((t) => {
+      const opt = document.createElement('option');
+      opt.value = t;
+      opt.textContent = t;
+      timeSelect.appendChild(opt);
+    });
+  }
+
+  // Service Card -> Preselect in Form
+  document.querySelectorAll('[data-choose-service]').forEach((btn) => {
+    btn.addEventListener('click', () => {
+      if (svcSelect) svcSelect.value = btn.dataset.chooseService;
+      document.getElementById('enquiry')?.scrollIntoView({ behavior: 'smooth' });
+    });
+  });
+
+  // Portfolio Lightbox
+  const lb = document.getElementById('c2Lightbox');
+  const lbImg = document.getElementById('c2LightboxImg');
+  const lbCap = document.getElementById('c2LightboxCap');
+  const lbClose = document.getElementById('c2LightboxClose');
+  document.querySelectorAll('.portfolio-tile').forEach((tile) => {
+    tile.addEventListener('click', () => {
+      if (!lb || !lbImg) return;
+      lbImg.src = tile.dataset.src;
+      lbImg.alt = tile.dataset.caption || 'Sample studio visual';
+      if (lbCap) lbCap.textContent = tile.dataset.caption || '';
+      lb.hidden = false;
+    });
+  });
+  function closeLb() { if (lb) lb.hidden = true; }
+  if (lbClose) lbClose.addEventListener('click', closeLb);
+  if (lb) lb.addEventListener('click', (e) => { if (e.target === lb) closeLb(); });
+  document.addEventListener('keydown', (e) => { if (e.key === 'Escape') closeLb(); });
+
+  // FAQ Accordion
+  document.querySelectorAll('.faq-btn').forEach((btn) => {
+    btn.addEventListener('click', () => {
+      const expanded = btn.getAttribute('aria-expanded') === 'true';
+      const panel = document.getElementById(btn.getAttribute('aria-controls'));
+      btn.setAttribute('aria-expanded', String(!expanded));
+      if (panel) panel.hidden = expanded;
+      const icon = btn.querySelector('span:last-child');
+      if (icon) icon.textContent = expanded ? '+' : '−';
+    });
+  });
+
+  // WhatsApp Form
+  const form = document.getElementById('c2Form');
+  const dateEl = document.getElementById('c2Date');
+  if (dateEl) dateEl.min = new Date().toISOString().split('T')[0];
+  if (form) {
+    form.addEventListener('submit', (e) => {
+      e.preventDefault();
+      const url = typeof window.buildGlamourHubWhatsAppUrl === 'function'
+        ? window.buildGlamourHubWhatsAppUrl({
+            name: document.getElementById('c2Name')?.value,
+            service: svcSelect?.value,
+            date: dateEl?.value,
+            time: timeSelect?.value,
+            message: document.getElementById('c2Message')?.value
+          })
+        : 'https://wa.me/918299343261';
+      window.open(url, '_blank', 'noopener,noreferrer');
+    });
+  }
+
+  // Back to Top & Reveal
+  const topBtn = document.getElementById('c2TopBtn');
+  window.addEventListener('scroll', () => {
+    if (topBtn) topBtn.classList.toggle('is-visible', window.scrollY > 450);
+  }, { passive: true });
+  if (topBtn) topBtn.addEventListener('click', () => window.scrollTo({ top: 0, behavior: 'smooth' }));
+
+  const reveals = document.querySelectorAll('.reveal');
+  if ('IntersectionObserver' in window) {
+    const io = new IntersectionObserver((entries) => {
+      entries.forEach((entry) => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('is-visible');
+          io.unobserve(entry.target);
+        }
+      });
+    }, { threshold: 0.12 });
+    reveals.forEach((el) => io.observe(el));
+  } else {
+    reveals.forEach((el) => el.classList.add('is-visible'));
+  }
+})();
+</script>
+
+
+</body></html>
